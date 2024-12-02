@@ -159,3 +159,6 @@ You can repeat all the process above to creating other users with different e-ma
 1. In the User Managment Collection click on Create User and in the Body Tab insert your details.
 2. Go to the Authentication Collection and press Logout. 
 - A message will appear saying "You have been logged out."
+
+
+## Data was taken from previous projects in the course, w3schools.com, youtube and chatgpt
