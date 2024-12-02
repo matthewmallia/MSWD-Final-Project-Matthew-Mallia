@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "151b804d-d110-4ab0-8e4e-038fbff181c9",
+		"name": "1. Basic Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38375659"
+	},
+	"item": [
+		{
+			"name": "Connectivity Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URI}}",
+					"host": [
+						"{{BASE_URI}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "404 Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URI}}bogus",
+					"host": [
+						"{{BASE_URI}}bogus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unsupported Method",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URI}}",
+					"host": [
+						"{{BASE_URI}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

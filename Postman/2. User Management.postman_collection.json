@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "db9be9a2-8793-4581-b193-f7e40a604be3",
+		"name": "2. User Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38375659"
+	},
+	"item": [
+		{
+			"name": "Create Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@kahuna.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password123",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Matthew",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Mallia",
+							"type": "text"
+						},
+						{
+							"key": "accessLevel",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URI}}user",
+					"host": [
+						"{{BASE_URI}}user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user@kahuna.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password123",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "User 1",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "User 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URI}}user",
+					"host": [
+						"{{BASE_URI}}user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
