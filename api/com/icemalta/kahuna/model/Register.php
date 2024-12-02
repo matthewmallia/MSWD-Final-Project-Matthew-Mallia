@@ -64,15 +64,6 @@ class Register implements  JsonSerializable
         return $register;
     }
 
-    // public static function load(Register $register): array
-    // {
-    //     $sql = "SELECT userId, serialNo, regDate, id FROM Register WHERE userId = :userId ORDER BY id DESC";
-    //     $sth = self::$db->prepare($sql);
-    //     $sth->bindValue('userId', $register->getUserId());
-    //     $sth->execute();
-    //     $registers = $sth->fetchAll(PDO::FETCH_FUNC, fn(...$fields) => new Register(...$fields));
-    //     return $registers;
-    // }
 
 // Load the Registered Products
     public static function load(Register $register): array
