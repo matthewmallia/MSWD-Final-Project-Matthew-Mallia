@@ -112,7 +112,7 @@ public static function convertWarranty(float $decimalYears): string {
 
     public function jsonSerialize(): array
     {
-        return get_object_vars($this); // Return all of my fields!
+        return get_object_vars($this); 
     }
 
     public function getId(): int
